@@ -53,6 +53,23 @@ RISC-V:
 - `---` represents the model is not availble to run on the device.
 - View [benchmark/config](./benchmark/config) for more details on benchmarking different models.
 
+## COCO 2017
+
+In order to produce obfuscated images out of original images, take the following steps:
+
+a. Place extracted COCO 2017 dataset folders train2017, val2017, and test2017 in the following path:
+
+```
+/opencv_zoo
+    /models
+        /face_detection_yunet
+            /test2017
+            /train2017
+            /val2017
+```
+
+b. In the same path run the 'face_annotation.ipynb' scripts to generate blurred versions of train, test, and val sets.
+
 ## Some Examples
 
 Some examples are listed below. You can find more in the directory of each model!
